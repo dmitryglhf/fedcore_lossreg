@@ -20,7 +20,7 @@ class MLP(nn.Module):
             nn.ReLU(),
             nn.Linear(32, output_size)
         )
-        self.loss_func = loss_func(**loss_kwargs)  
+        self.loss_func = loss_func(**loss_kwargs)
         self.optimizer = optimizer(self.parameters(), **opt_kwargs)
 
     def fit(self, num_epochs: int = 100,
