@@ -176,3 +176,6 @@ runs/
 
 # Kaggle submissions
 submission.csv
+
+# Test.py
+test.py
